@@ -1,0 +1,36 @@
+//defined size chessboard- 8*8 dimensions, size 8
+let size=8;
+board=" ";
+
+for( let l=0;l< size;l++){
+  for( let w=0; w<size; w++){
+    if((l+w)%2==0){
+      board+=" ";
+    }
+    else{
+      board+="*";
+    }
+  }
+   board+="\n"
+}
+console.log(board);
+
+
+//undefined size chessboard
+
+
+let size=Number(prompt("Enter  a number"));
+ board=" ";
+
+for( let l=0;l< size;l++){
+  for( let w=0; w<size; w++){
+    if((l+w)%2==0){
+      board+=" ";
+    }
+    else{
+      board+="*";
+    }
+  }
+   board+="\n"
+}
+console.log(board);
